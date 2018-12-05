@@ -365,9 +365,10 @@ footer p {
   align-items: center;
   justify-content: space-around;
   flex-wrap: wrap;
+  flex-direction: column;
 
 }
-.ba-list-name{
+/* .ba-list-name{
   width: 90%;
   padding-left: 10px;
   font-size: 14px;
@@ -375,8 +376,15 @@ footer p {
   justify-content: space-between;
   margin-bottom: 10px;
 
+} */
+.ba-list-name-out, .ba-list-name-in{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  margin-bottom: 10px;
 }
-#ba-list-status{
+.ba-list-name-in #ba-list-status{
   text-align: center;
   color: #fff;
   font-size: 12px;
@@ -384,5 +392,15 @@ footer p {
   padding: 5px;
   border-radius: 10px;
   background: #5fcf80;
+  
+}
+.ba-list-name-out #ba-list-status{
+  text-align: center;
+  color: #fff;
+  font-size: 12px;
+  width: 10%;
+  padding: 5px;
+  border-radius: 10px;
+  background: #ed5a5a;
   
 }
